@@ -56,7 +56,7 @@ body {
 .font-mono { font-family: var(--font-mono) !important; }
 
 /* ==========================================================================
-   ESTILOS ESPECÍFICOS DO INDEX / PORTAL CENTRAL
+   ESTILOS DO INDEX / PORTAL CENTRAL E SUBDOMÍNIOS
    ========================================================================== */
 
 header {
@@ -215,7 +215,7 @@ header h1 {
 }
 
 /* ==========================================================================
-   MODO DE LEITURA (READER MODE) & ENSAIOS (PARA OUTRAS PÁGINAS DO DOMÍNIO)
+   MODO DE LEITURA (READER MODE) & ENSAIOS
    ========================================================================== */
 .reader-mode,
 .article-content, 
