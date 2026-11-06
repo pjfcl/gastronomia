@@ -1,0 +1,1 @@
+este site regista e serve de suporte a uma investigação gastronómica (Food Studies)
