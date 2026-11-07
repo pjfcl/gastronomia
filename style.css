@@ -56,129 +56,101 @@ body {
 .font-mono { font-family: var(--font-mono) !important; }
 
 /* ==========================================================================
-   ESTILOS DO INDEX / PORTAL CENTRAL E SUBDOMÍNIOS
+   NAVEGAÇÃO BREADCRUMB & CABEÇALHOS DO SCRIPTORIUM / PORTAL
    ========================================================================== */
 
-header {
+.breadcrumb {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.breadcrumb a {
+    color: var(--muted-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--accent-color);
+}
+
+.breadcrumb span {
+    color: var(--accent-color);
+}
+
+header.wiki-header {
     border-bottom: 2px solid var(--text-color);
     padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+header.wiki-header h1 {
+    font-family: var(--font-sans);
+    font-size: var(--text-h1);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0 0 6px 0;
+    color: var(--text-color);
+    line-height: var(--line-height-heading);
+}
+
+.header-sub {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    color: var(--accent-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Caixa de Enquadramento / Aviso */
+.warning-box {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-color);
+    padding: 22px 24px;
     margin-bottom: 35px;
 }
 
-header h1 {
-    font-family: var(--font-sans);
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--text-color);
-    margin: 0 0 6px 0;
-}
-
-.subtitle {
-    font-family: var(--font-sans);
-    font-size: 0.85rem;
-    color: var(--accent-color);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-}
-
-.aforismo {
-    font-style: italic;
-    color: var(--muted-color);
-    border-left: 3px solid var(--accent-color);
-    padding-left: 15px;
-    margin-top: 15px;
-    font-size: 1.05rem;
-}
-
-/* Módulo de Newsletter (D2C) */
-.newsletter-section {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-top: 3px solid var(--accent-color);
-    padding: 28px;
-    margin-bottom: 50px;
-}
-
-.embeddable-buttondown-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 440px;
-    margin: 0 auto;
-}
-
-.embeddable-buttondown-form input[type="email"] {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10px 14px;
-    border: 1px solid var(--border-color);
-    background: var(--bg-color);
-    color: var(--text-color);
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    text-align: center;
-}
-
-.embeddable-buttondown-form input[type="submit"] {
-    padding: 12px 18px;
-    border: 0;
-    background: var(--text-color);
-    color: #ffffff;
-    font-family: var(--font-sans);
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: background 0.2s ease;
-}
-
-.embeddable-buttondown-form input[type="submit"]:hover {
-    background: var(--accent-color);
-}
-
-/* Títulos de Secção */
-.section-header {
+.warning-box h2 {
     font-family: var(--font-sans);
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: var(--accent-color);
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 8px;
-    margin-bottom: 15px;
-}
-
-.section-intro {
-    font-family: var(--font-serif);
-    font-size: 0.95rem;
-    color: var(--muted-color);
-    font-style: italic;
     margin-top: 0;
-    margin-bottom: 25px;
-    line-height: 1.6;
+    margin-bottom: 8px;
 }
 
-/* Cartões de Grelha / Blocos do Portal */
+/* Cartões de Entradas e Secções */
 .card-item {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
-    padding: 22px;
-    height: 100%;
-    transition: border-color 0.2s ease, transform 0.2s ease;
-    display: flex;
-    flex-direction: column;
+    border-left: 3px solid var(--text-color);
+    padding: 20px 22px;
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    display: block;
     text-decoration: none !important;
     color: inherit !important;
+    height: 100%;
 }
 
 .card-item:hover {
-    border-color: var(--accent-color);
+    border-left-color: var(--accent-color);
+    border-color: var(--border-color);
     transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(15, 30, 45, 0.06);
+}
+
+.card-item:hover h3 {
+    color: var(--accent-color);
 }
 
 .card-numeral {
@@ -187,21 +159,21 @@ header h1 {
     font-weight: 700;
     color: var(--accent-color);
     margin-bottom: 6px;
+    display: block;
 }
 
 .card-title {
-    font-size: 1.25rem;
-    margin: 0 0 10px 0;
+    font-size: 1.15rem;
+    margin: 6px 0 8px 0;
     color: var(--text-color);
-    font-weight: 400;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 6px;
+    font-weight: 600;
+    transition: color 0.2s ease;
 }
 
 .card-desc {
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     color: var(--muted-color);
-    margin-bottom: 18px;
+    margin: 0 0 12px 0;
 }
 
 .card-tag {
@@ -210,52 +182,177 @@ header h1 {
     color: var(--accent-color);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-top: auto;
     font-weight: 600;
 }
 
-/* ==========================================================================
-   MODO DE LEITURA (READER MODE) & ENSAIOS
-   ========================================================================== */
-.reader-mode,
-.article-content, 
-.entry-content, 
-article {
-    max-width: var(--max-content-width);
-    margin-inline: auto;
-    padding-inline: 1rem;
+/* Menu Lateral Esquerda/Direita (Sidebar) & Pesquisa */
+.wiki-sidebar {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 22px;
+    margin-bottom: 30px;
 }
 
-p {
+.wiki-sidebar h3 {
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent-color);
     margin-top: 0;
-    margin-bottom: 1.8rem;
-    text-align: justify;
-    hyphens: auto;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 6px;
+}
+
+.wiki-sidebar input[type="text"] {
+    width: 100%;
+    padding: 9px 12px;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 2px;
+    transition: border-color 0.2s ease;
+}
+
+.wiki-sidebar input[type="text"]:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.wiki-sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+}
+
+.wiki-sidebar-list li {
+    margin-bottom: 8px;
+}
+
+.wiki-sidebar-list a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.wiki-sidebar-list a:hover {
+    color: var(--accent-color);
+}
+
+/* Bloco Destacado / Callouts */
+.gastro-callout {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--accent-color);
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.gastro-callout p {
+    font-family: var(--font-serif);
+    font-size: 1.02rem;
+    font-style: italic;
+    color: var(--text-color);
+    margin: 8px 0 12px 0;
+    text-align: center;
+}
+
+.gastro-link {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.gastro-link:hover {
+    text-decoration: underline;
+}
+
+/* Botão Minimalista de Donativos */
+.btn-donativos {
+    display: inline-block;
+    background-color: var(--text-color);
+    color: #ffffff !important;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid var(--text-color);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-donativos:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* ==========================================================================
+   RODAPÉ INSTITUCIONAL & CAIXAS DE SUPORTE COM ESPAÇAMENTO REFORÇADO
+   ========================================================================== */
+
+.footer-boxes-container {
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+    margin-bottom: 40px;
+}
+
+.footer-box-left {
+    padding: 24px;
+    padding-right: 24px;
+}
+
+.footer-box-right {
+    padding: 24px;
+    padding-left: 24px;
+    border-left: 1px solid var(--border-color);
 }
 
 @media (max-width: 768px) {
-    p {
-        text-align: left;
+    .footer-box-right {
+        border-left: none;
+        border-top: 1px solid var(--border-color);
+        padding-left: 24px;
     }
 }
 
-/* Rodapé Institucional */
-footer {
-    margin-top: 60px;
+.site-footer {
+    margin-top: 4rem;
     border-top: 1px solid var(--border-color);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
     font-family: var(--font-sans);
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     color: var(--muted-color);
     text-align: center;
 }
 
-footer a {
-    color: var(--accent-color);
-    text-decoration: none;
+.footer-links {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
-footer a:hover {
+.footer-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
     text-decoration: underline;
 }
