@@ -56,9 +56,32 @@ body {
 .font-mono { font-family: var(--font-mono) !important; }
 
 /* ==========================================================================
-   NAVEGAÇÃO BREADCRUMB & CABEÇALHOS DO SCRIPTORIUM / PORTAL
+   MODO DE LEITURA (READER MODE) & ENSAIOS
    ========================================================================== */
+.reader-mode,
+.article-content, 
+.entry-content, 
+article {
+    max-width: var(--max-content-width);
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
 
+/* Parágrafos refinados para legibilidade académica e ensaística */
+p {
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+    text-align: justify;
+    hyphens: auto;
+}
+
+@media (max-width: 768px) {
+    p {
+        text-align: left; /* Desativa justificação em ecrãs móveis estreitos */
+    }
+}
+
+/* Navegação Breadcrumb Superior */
 .breadcrumb {
     font-family: var(--font-sans);
     font-size: 0.85rem;
@@ -82,6 +105,7 @@ body {
     color: var(--accent-color);
 }
 
+/* Cabeçalho do Scriptorium e Subdomínios */
 header.wiki-header {
     border-bottom: 2px solid var(--text-color);
     padding-bottom: 20px;
@@ -109,7 +133,7 @@ header.wiki-header h1 {
     margin: 0;
 }
 
-/* Caixa de Enquadramento / Aviso */
+/* Barra de Alerta / Boas-vindas / Manifesto */
 .warning-box {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -185,7 +209,7 @@ header.wiki-header h1 {
     font-weight: 600;
 }
 
-/* Menu Lateral Esquerda/Direita (Sidebar) & Pesquisa */
+/* Menu Lateral (Sidebar) & Pesquisa */
 .wiki-sidebar {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -245,7 +269,7 @@ header.wiki-header h1 {
     color: var(--accent-color);
 }
 
-/* Bloco Destacado / Callouts */
+/* Bloco Destacado: Chamadas Cruzadas */
 .gastro-callout {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -300,7 +324,7 @@ header.wiki-header h1 {
 }
 
 /* ==========================================================================
-   RODAPÉ INSTITUCIONAL & CAIXAS DE SUPORTE COM ESPAÇAMENTO REFORÇADO
+   RODAPÉ INSTITUCIONAL & CAIXAS DE SUPORTE
    ========================================================================== */
 
 .footer-boxes-container {
