@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preload" href="manifest.json" as="fetch" type="application/json" crossorigin>
 
-    <title>Caldo de Sabores — Investigação Gastronómica & Ofício | Paulo Lopes</title>
+    <title>Caldo de Sabores — Investigação Gastronómica & Antropologia | Paulo Lopes</title>
 
     <!-- Framework W3.CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Folha de Estilos Oficial Partilhada -->
+    <!-- Folha de Estilos Oficial (Partilhada na Raiz) -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="w3-padding-large">
@@ -24,152 +24,154 @@
     <main class="w3-content w3-padding-24" style="max-width: 1100px;">
         
         <!-- Breadcrumb Superior -->
-        <nav class="breadcrumb">
-            <a href="https://paulolopes.org">paulolopes.org</a> / <span> <a href="https://gastronomia.paulolopes.org">Gastronomia</a> </span>
+        <nav class="breadcrumb" style="font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 20px; color: var(--muted-color);">
+            <a href="https://paulolopes.org" style="color: var(--accent-color); text-decoration: none;">paulolopes.org</a> / 
+            <span>Gastronomia</span>
         </nav>
 
-        <!-- Cabeçalho Principal Idêntico ao Scriptorium e Portal -->
-        <header class="wiki-header">
-            <h1>Caldo de Sabores</h1>
-            <p class="header-sub">Investigação Gastronómica • Antropologia do Quotidiano</p>
+        <!-- Cabeçalho Principal -->
+        <header class="wiki-header" style="border-bottom: 2px solid var(--text-color); padding-bottom: 20px; margin-bottom: 30px;">
+            <h1 style="font-family: var(--font-sans); font-size: 2.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">Caldo de Sabores</h1>
+            <p class="header-sub" style="font-family: var(--font-sans); font-size: 1rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent-color); font-weight: 600; margin: 0;">Investigação Gastronómica • Antropologia do Quotidiano</p>
         </header>
 
-        <!-- Mensagem de Enquadramento / Manifesto -->
-        <section class="warning-box">
-            <h2>A Bancada como Laboratório</h2>
-            <p style="margin: 0;" align="justify">
+        <!-- Caixa de Enquadramento / Manifesto Inicial -->
+        <section class="warning-box" style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-left: 4px solid var(--accent-color); padding: 25px 30px; margin-bottom: 40px;">
+            <h2 style="font-family: var(--font-sans); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color); margin-top: 0; margin-bottom: 12px;">A Bancada Como Laboratório</h2>
+            <p style="margin: 0; line-height: 1.8; text-align: justify; font-size: 1.05rem;">
                 Neste espaço, a bancada de cozinha transforma-se num laboratório de investigação: pesquisamos a arte culinária; questionamos a gastronomia e os seus interlocutores; observamos o cozinheiro, o comensal e a refeição partilhada. Unindo a alta cozinha a uma antropologia do quotidiano, construímos um arquivo vivo onde a matéria encontra sentido.
             </p>
         </section>
 
-        <!-- Layout em Duas Colunas -->
-        <div class="w3-row-padding" style="margin-left: -16px; margin-right: -16px;">
-            
-            <!-- COLUNA PRINCIPAL: AS 5 SECÇÕES NUCLEARES -->
-            <article class="w3-col m8 l9">
+        <!-- Secção de Índice do Laboratório (Cartões das Bases de Dados Autónomas) -->
+        <div style="margin-bottom: 50px;">
+            <h2 class="font-sans" style="font-size: 1.2rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-color); margin-bottom: 25px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                Índice do Laboratório
+            </h2>
+
+            <!-- Grelha de Cartões (W3.CSS Responsive Layout) -->
+            <div class="w3-row-padding" style="margin: 0 -15px;">
                 
-                <h2 class="font-sans" style="font-size: 1.25rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-color); margin-top: 0; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
-                    Índice do Laboratório
-                </h2>
-
-                <div class="w3-row-padding" style="margin-left:-16px; margin-right:-16px;">
-                    
-                    <!-- 1. OFÍCIO -->
-                    <div class="w3-col m6 s12 w3-margin-bottom">
-                        <a href="oficio/" class="card-item">
-                            <span class="card-numeral">01</span>
-                            <h3 class="card-title">Ofício</h3>
-                            <p class="card-desc">Notas do artífice. Registo auto-etnográfico do quotidiano na cozinha profissional e disciplina do trabalho.</p>
-                            <span class="card-tag">Diário de Campo &rarr;</span>
-                        </a>
+                <!-- 01. Ofício -->
+                <div class="w3-col m6 l4" style="margin-bottom: 25px; padding: 0 15px;">
+                    <div class="card-item" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-color); text-transform: uppercase; display: block; margin-bottom: 8px;">01 • Secção</span>
+                            <h3 style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 600; margin: 0 0 10px 0;">
+                                <a href="html/oficio.html" style="text-decoration: none; color: var(--text-color);">Ofício</a>
+                            </h3>
+                            <p style="font-size: 0.9rem; color: var(--muted-color); margin: 0 0 15px 0; line-height: 1.6;">
+                                Notas do artífice. Registo auto-etnográfico do quotidiano na cozinha profissional e disciplina do trabalho.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="html/oficio.html" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-color); text-decoration: none; font-weight: 600;">Diários de Campo &rarr;</a>
+                        </div>
                     </div>
-
-                    <!-- 2. RECEITAS -->
-                    <div class="w3-col m6 s12 w3-margin-bottom">
-                        <a href="receitas/" class="card-item">
-                            <span class="card-numeral">02</span>
-                            <h3 class="card-title">Receitas</h3>
-                            <p class="card-desc">Mais do que um receituário, um arquivo de memórias culinárias, fichas técnicas estruturadas e rigor métrico.</p>
-                            <span class="card-tag">Arquivo Técnico &rarr;</span>
-                        </a>
-                    </div>
-
                 </div>
 
-                <div class="w3-row-padding" style="margin-left:-16px; margin-right:-16px; margin-top: 10px;">
-                    
-                    <!-- 3. PRODUTOS -->
-                    <div class="w3-col m6 s12 w3-margin-bottom">
-                        <a href="produtos/" class="card-item">
-                            <span class="card-numeral">03</span>
-                            <h3 class="card-title">Produtos</h3>
-                            <p class="card-desc">O terroir, a permacultura, a soberania alimentar e a ética do Nose to Tail aplicadas à matéria-prima.</p>
-                            <span class="card-tag">Matéria & Origem &rarr;</span>
-                        </a>
+                <!-- 02. Receitas -->
+                <div class="w3-col m6 l4" style="margin-bottom: 25px; padding: 0 15px;">
+                    <div class="card-item" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-color); text-transform: uppercase; display: block; margin-bottom: 8px;">02 • Secção</span>
+                            <h3 style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 600; margin: 0 0 10px 0;">
+                                <a href="html/receitas.html" style="text-decoration: none; color: var(--text-color);">Receitas</a>
+                            </h3>
+                            <p style="font-size: 0.9rem; color: var(--muted-color); margin: 0 0 15px 0; line-height: 1.6;">
+                                Mais do que um receituário, um arquivo de memórias culinárias, fichas técnicas estruturadas e rigor métrico.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="html/receitas.html" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-color); text-decoration: none; font-weight: 600;">Arquivo Técnico &rarr;</a>
+                        </div>
                     </div>
-
-                    <!-- 4. LOCAIS -->
-                    <div class="w3-col m6 s12 w3-margin-bottom">
-                        <a href="locais/" class="card-item">
-                            <span class="card-numeral">04</span>
-                            <h3 class="card-title">Locais</h3>
-                            <p class="card-desc">Topografias, geografias de trabalho e o território como destino e interlocutor cultural.</p>
-                            <span class="card-tag">Espaço & Território &rarr;</span>
-                        </a>
-                    </div>
-
                 </div>
 
-                <div class="w3-row-padding" style="margin-left:-16px; margin-right:-16px; margin-top: 10px;">
-                    
-                    <!-- 5. SOBRE -->
-                    <div class="w3-col m12 s12 w3-margin-bottom">
-                        <a href="sobre/" class="card-item">
-                            <span class="card-numeral">05</span>
-                            <h3 class="card-title">Sobre</h3>
-                            <p class="card-desc">O manifesto, a Culinária Integral, o Protocolo P.A.R.T.E. e os fundamentos teóricos do autor.</p>
-                            <span class="card-tag">Fundamentos & Método &rarr;</span>
-                        </a>
+                <!-- 03. Produtos -->
+                <div class="w3-col m6 l4" style="margin-bottom: 25px; padding: 0 15px;">
+                    <div class="card-item" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-color); text-transform: uppercase; display: block; margin-bottom: 8px;">03 • Secção</span>
+                            <h3 style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 600; margin: 0 0 10px 0;">
+                                <a href="html/produtos.html" style="text-decoration: none; color: var(--text-color);">Produtos</a>
+                            </h3>
+                            <p style="font-size: 0.9rem; color: var(--muted-color); margin: 0 0 15px 0; line-height: 1.6;">
+                                O terroir, a permacultura, a soberania alimentar e a ética do Nose to Tail aplicadas à matéria-prima.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="html/produtos.html" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-color); text-decoration: none; font-weight: 600;">Matéria & Origem &rarr;</a>
+                        </div>
                     </div>
-
                 </div>
 
-            </article>
-
-            <!-- COLUNA SECUNDÁRIA (DIREITA): BARRA LATERAL REFINADA -->
-            <aside class="w3-col m4 l3">
-                <div class="wiki-sidebar">
-                    
-                    <div class="wiki-sidebar" style="margin-bottom: 25px;">
-                        <h3>Pesquisar no Arquivo</h3>
-                        <form action="index.html" method="GET" style="margin-top: 10px;">
-                            <input type="text" name="q" placeholder="Procurar termos..." required>
-                        </form>
+                <!-- 04. Locais -->
+                <div class="w3-col m6 l4" style="margin-bottom: 25px; padding: 0 15px;">
+                    <div class="card-item" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-color); text-transform: uppercase; display: block; margin-bottom: 8px;">04 • Secção</span>
+                            <h3 style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 600; margin: 0 0 10px 0;">
+                                <a href="html/locais.html" style="text-decoration: none; color: var(--text-color);">Locais</a>
+                            </h3>
+                            <p style="font-size: 0.9rem; color: var(--muted-color); margin: 0 0 15px 0; line-height: 1.6;">
+                                Topografias, geografias de trabalho e o território como destino e interlocutor cultural.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="html/locais.html" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-color); text-decoration: none; font-weight: 600;">Espaço & Território &rarr;</a>
+                        </div>
                     </div>
-
-                    <h3>Secções</h3>
-                    <ul class="wiki-sidebar-list">
-                        <li><a href="html/oficio.html"><strong>Ofício</strong> <br><span class="w3-tiny" style="color: var(--muted-color);">Diários de Campo</span></a></li>
-                        <li><a href="html/receitas.html"><strong>Receitas</strong> <br><span class="w3-tiny" style="color: var(--muted-color);">Arquivo Técnico</span></a></li>
-                        <li><a href="html/produtos.html"><strong>Produtos</strong> <br><span class="w3-tiny" style="color: var(--muted-color);">Terroir & Matéria</span></a></li>
-                        <li><a href="html/locais.html"><strong>Locais</strong> <br><span class="w3-tiny" style="color: var(--muted-color);">Topografias</span></a></li>
-                        <li><a href="html/sobre.html"><strong>Sobre</strong> <br><span class="w3-tiny" style="color: var(--muted-color);">P.A.R.T.E. & Integral</span></a></li>
-                    </ul>
-
                 </div>
 
-                <!-- Bloco de Chamada para o Scriptorium Digital -->
-                <div class="gastro-callout">
-                    <span class="font-mono w3-tiny w3-uppercase" style="color: var(--accent-color); letter-spacing: 1px;">Humanidades</span>
-                    <p>
-                        "Investigação cultural, teoria crítica e ensaios no Scriptorium Digital."
-                    </p>
-                    <a href="https://scriptoriumdigital.org" class="gastro-link">Scriptorium &rarr;</a>
+                <!-- 05. Sobre -->
+                <div class="w3-col m6 l4" style="margin-bottom: 25px; padding: 0 15px;">
+                    <div class="card-item" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-color); text-transform: uppercase; display: block; margin-bottom: 8px;">05 • Secção</span>
+                            <h3 style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 600; margin: 0 0 10px 0;">
+                                <a href="html/sobre.html" style="text-decoration: none; color: var(--text-color);">Sobre</a>
+                            </h3>
+                            <p style="font-size: 0.9rem; color: var(--muted-color); margin: 0 0 15px 0; line-height: 1.6;">
+                                O manifesto, a Culinária Integral, o Protocolo P.A.R.T.E. e os fundamentos teóricos do autor.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="html/sobre.html" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-color); text-decoration: none; font-weight: 600;">Fundamentos & Método &rarr;</a>
+                        </div>
+                    </div>
                 </div>
-            </aside>
 
+            </div>
         </div>
 
-        <!-- RODAPÉ INSTITUCIONAL (COM ESPAÇAMENTO REFORÇADO NAS CAIXAS) -->
-        <footer class="site-footer">
+        <!-- Secção de Conexão com Humanidades (Scriptorium) -->
+        <section style="background-color: var(--card-bg); border: 1px solid var(--border-color); padding: 30px; margin-bottom: 40px; text-align: center;">
+            <p style="font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent-color); margin-bottom: 8px;">Humanidades</p>
+            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; font-style: italic; margin: 0 0 15px 0;">&ldquo;Investigação cultural, teoria crítica e ensaios no Scriptorium Digital.&rdquo;</h3>
+            <a href="https://scriptoriumdigital.org" style="font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-color); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--accent-color); padding-bottom: 2px;">Scriptorium &rarr;</a>
+        </section>
+
+        <!-- RODAPÉ INSTITUCIONAL TRANSVERSAL -->
+        <footer class="site-footer" style="margin-top: 60px; border-top: 1px solid var(--border-color); padding-top: 30px;">
             
             <div class="footer-boxes-container w3-row w3-text-left" style="margin-bottom: 40px;">
                 
-                <div class="w3-col m8 l8 footer-box-left">
+                <div class="w3-col m8 l8 footer-box-left" style="padding: 24px;">
                     <h4 class="font-sans" style="font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color); margin-top: 0; margin-bottom: 10px;">
                         Como Navegar Neste Espaço
                     </h4>
                     <p style="font-size: 0.9rem; color: var(--text-color); margin: 0; line-height: 1.7; text-align: justify;">
-                        O que aqui encontras é o resultado de uma imersão na culinária e no ofício; na antropologia do quotidiano e no território. Ao criar este arquivo de notas estruturadas, estabeleço um método para organizar a experiência obtida na bancada e no serviço — unindo o rigor técnico das <strong>Receitas</strong> à reflexão auto-etnográfica do <strong>Ofício</strong>, alimentado pela ética dos <strong>Produtos</strong> e das geografias de <strong>Locais</strong>.
+                        O que aqui encontras é o resultado de uma imersão na culinária e no ofício; na antropologia do quotidiano e no território. Ao criar este arquivo de notas estruturadas, estabeleço um método para organizar a experiência obtida na bancada e no serviço — unindo o rigor técnico das Receitas à reflexão auto-etnográfica do Ofício, alimentado pela ética dos Produtos e das geografias de Locais.
                     </p>
                 </div>
 
-                <div class="w3-col m4 l4 footer-box-right">
+                <div class="w3-col m4 l4 footer-box-right" style="padding: 24px; border-left: 1px solid var(--border-color);">
                     <h4 class="font-sans" style="font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-color); margin-top: 0; margin-bottom: 10px;">
-                        Apoiar esta Oficina
+                        Apoiar a Oficina
                     </h4>
                     <p style="font-size: 0.85rem; color: var(--muted-color); margin: 0 0 14px 0; line-height: 1.5; text-align: justify;">
-                        Este arquivo livre de publicidade e rastreadores subsiste com o apoio independente da comunidade. 
+                        Este arquivo livre de publicidade e rastreadores subsiste com o apoio independente da comunidade.
                     </p>
                     <div class="w3-center">
                         <a href="https://paypal.me/PauloFurtadoLopes" target="_blank" rel="noopener" class="btn-donativos">
@@ -180,20 +182,22 @@
 
             </div>
 
+            <!-- Aforismo Central -->
             <p style="font-style: italic; font-family: var(--font-serif); margin-bottom: 1.2rem; color: var(--muted-color); text-align: center;">
-                "Enquanto a mão corta, a mente destila."
+                &ldquo;Enquanto a mão corta, a mente destila.&rdquo;
             </p>
             
             <!-- Menu Transversal do Ecossistema -->
-            <div class="footer-links" style="margin-bottom: 15px;">
+            <div class="footer-links" style="margin-bottom: 15px; text-align: center;">
                 <a href="https://paulolopes.org">Portal</a> &mdash; 
-                <a href="https://humanidades.paulolopes.org">Humanidades</a> &mdash;  
+                <a href="https://scriptoriumdigital.org">Humanidades</a> &mdash; 
                 <a href="https://gastronomia.paulolopes.org">Gastronomia</a> &mdash; 
                 <a href="https://arquivo.paulolopes.org">Arquivo</a>
             </div>
             
+            <!-- Assinatura e Contacto -->
             <p class="font-mono w3-tiny w3-uppercase w3-wide" style="letter-spacing: 0.05em; margin-bottom: 0.5rem; color: var(--muted-color); text-align: center;">
-                • PAULO FURTADO LOPES •
+                &bull; PAULO FURTADO LOPES &bull;
             </p>
             <p class="font-mono w3-tiny" style="color: var(--muted-color); margin: 0; text-align: center;">
                 Contacto Direto: <a href="mailto:mail@paulolopes.org" style="color: inherit; font-weight: 600;">mail@paulolopes.org</a>
