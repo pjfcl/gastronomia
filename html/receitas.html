@@ -21,7 +21,7 @@
 </head>
 <body class="w3-padding-large">
 
-    <main class="w3-content w3-padding-24" style="max-width: 1100px;">
+    <main class="w3-content w3-padding-24" style="max-width: 1200px;">
         
         <!-- Breadcrumb Superior -->
         <nav class="breadcrumb" style="font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 20px; color: var(--muted-color);">
@@ -32,46 +32,96 @@
 
         <!-- Cabeçalho Principal -->
         <header class="wiki-header" style="border-bottom: 2px solid var(--text-color); padding-bottom: 20px; margin-bottom: 30px;">
-            <h1 style="font-family: var(--font-sans); font-size: 2.5rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">Arquivo Técnico de Receitas</h1>
-            <p class="header-sub" style="font-family: var(--font-sans); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent-color); font-weight: 600; margin: 0;">Mais do que um receituário: rigor métrico, técnica e memória culinária</p>
+            <h1 style="font-family: var(--font-sans); font-size: 2.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">Arquivo Técnico de Receitas</h1>
+            <p class="header-sub" style="font-family: var(--font-sans); font-size: 1rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent-color); font-weight: 600; margin: 0;">Mais do que um receituário: rigor métrico, técnica e memória culinária</p>
         </header>
 
-        <!-- Caixa de Enquadramento / Nota Conceptual -->
-        <section class="warning-box" style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-left: 4px solid var(--accent-color); padding: 25px 30px; margin-bottom: 40px;">
-            <h2 style="font-family: var(--font-sans); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color); margin-top: 0; margin-bottom: 12px;">A Ficha Técnica Como Instrumento de Rigor</h2>
-            <p style="margin: 0; line-height: 1.8; text-align: justify;">
-                Cada registo nesta base de dados autónoma corresponde a um ficheiro em Markdown individual. Aqui, a receita afasta-se do formato comercial e abdica do supérfluo, privilegiando as proporções exactas, a nomenclatura técnica, o aproveitamento integral e a repetição metódica exigida na cozinha de ofício.
-            </p>
-        </section>
+        <!-- GRELHA PRINCIPAL (Conteúdo à Esquerda | Sidebar à Direita) -->
+        <div class="w3-row-padding" style="margin: 0 -15px;">
+            
+            <!-- COLUNA ESQUERDA: CONTEÚDO PRINCIPAL (8 colunas) -->
+            <div class="w3-col l8" style="padding: 0 15px; margin-bottom: 40px;">
+                
+                <!-- Caixa de Enquadramento / Nota Conceptual -->
+                <section class="warning-box" style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-left: 4px solid var(--accent-color); padding: 25px 30px; margin-bottom: 30px;">
+                    <h2 style="font-family: var(--font-sans); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color); margin-top: 0; margin-bottom: 12px;">A Ficha Técnica Como Instrumento de Rigor</h2>
+                    <p style="margin: 0; line-height: 1.8; text-align: justify; font-size: 1.05rem;">
+                        Cada registo nesta base de dados autónoma corresponde a um ficheiro em Markdown individual. Aqui, a receita afasta-se do formato comercial e abdica do supérfluo, privilegiando as proporções exactas, a nomenclatura técnica, o aproveitamento integral e a repetição metódica exigida na cozinha de ofício.
+                    </p>
+                </section>
 
-        <!-- Secção de Listagem de Entradas (Base de Dados Autónoma / Vinculada à pasta /md/receitas/) -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="font-sans" style="font-size: 1.15rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-color); margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
-                Índice de Fichas Técnicas
-            </h2>
+                <!-- Secção de Listagem de Entradas (Base de Dados Autónoma / Vinculada à pasta /md/receitas/) -->
+                <div>
+                    <h2 class="font-sans" style="font-size: 1.2rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-color); margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                        Índice de Fichas Técnicas
+                    </h2>
 
-            <!-- Item de Exemplo 1 -->
-            <div class="card-item" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; margin-bottom: 20px;">
-                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-color); text-transform: uppercase; display: block; margin-bottom: 6px;">Ficha #014 • Bases de Cozinha</span>
-                <h3 style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 600; margin: 0 0 10px 0;">
-                    <a href="#" style="text-decoration: none; color: var(--text-color);">Caldo Claro de Raízes e Espinhas da Costa</a>
-                </h3>
-                <p style="font-size: 0.95rem; color: var(--muted-color); margin: 0 0 15px 0; line-height: 1.7; text-align: justify;">
-                    Extração limpa de sabores marinhos com base em colagénio de peixe de rocha, clarificação térmica gradual e aromáticos de horta local.
-                </p>
-                <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-color); font-weight: 600;">Consultar Ficha Técnica &rarr;</span>
+                    <!-- Item de Exemplo 1 -->
+                    <div class="card-item" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; margin-bottom: 20px;">
+                        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-color); text-transform: uppercase; display: block; margin-bottom: 6px;">Ficha #014 • Bases de Cozinha</span>
+                        <h3 style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 600; margin: 0 0 10px 0;">
+                            <a href="#" style="text-decoration: none; color: var(--text-color);">Caldo Claro de Raízes e Espinhas da Costa</a>
+                        </h3>
+                        <p style="font-size: 0.95rem; color: var(--muted-color); margin: 0 0 15px 0; line-height: 1.7; text-align: justify;">
+                            Extração limpa de sabores marinhos com base em colagénio de peixe de rocha, clarificação térmica gradual e aromáticos de horta local.
+                        </p>
+                        <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-color); font-weight: 600;">Consultar Ficha Técnica &rarr;</span>
+                    </div>
+
+                    <!-- Item de Exemplo 2 -->
+                    <div class="card-item" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; margin-bottom: 20px;">
+                        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-color); text-transform: uppercase; display: block; margin-bottom: 6px;">Ficha #013 • Carnes & Ofício</span>
+                        <h3 style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 600; margin: 0 0 10px 0;">
+                            <a href="#" style="text-decoration: none; color: var(--text-color);">Redução Lenta de Ossos e Glace de Carne</a>
+                        </h3>
+                        <p style="font-size: 0.95rem; color: var(--muted-color); margin: 0 0 15px 0; line-height: 1.7; text-align: justify;">
+                            Aplicação da escola clássica francesa na torrefação profunda e desengorduramento estrito para obtenção de uma textura untuosa sem adição de espessantes artificiais.
+                        </p>
+                        <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-color); font-weight: 600;">Consultar Ficha Técnica &rarr;</span>
+                    </div>
+
+                </div>
+
             </div>
 
-            <!-- Item de Exemplo 2 -->
-            <div class="card-item" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; margin-bottom: 20px;">
-                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-color); text-transform: uppercase; display: block; margin-bottom: 6px;">Ficha #013 • Carnes & Ofício</span>
-                <h3 style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 600; margin: 0 0 10px 0;">
-                    <a href="#" style="text-decoration: none; color: var(--text-color);">Redução Lenta de Ossos e Glace de Carne</a>
-                </h3>
-                <p style="font-size: 0.95rem; color: var(--muted-color); margin: 0 0 15px 0; line-height: 1.7; text-align: justify;">
-                    Aplicação da escola clássica francesa na torrefação profunda e desengorduramento estrito para obtenção de uma textura untuosa sem adição de espessantes artificiais.
-                </p>
-                <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-color); font-weight: 600;">Consultar Ficha Técnica &rarr;</span>
+            <!-- COLUNA DIREITA: SIDEBAR DO AUTOR (4 colunas) -->
+            <div class="w3-col l4" style="padding: 0 15px;">
+                
+                <!-- 1. Caixa de Pesquisa -->
+                <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 20px; margin-bottom: 25px;">
+                    <h3 style="font-family: var(--font-sans); font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-color); margin-top: 0; margin-bottom: 12px;">
+                        Pesquisar no Arquivo
+                    </h3>
+                    <form action="/pesquisa" method="GET" style="display: flex; gap: 8px;">
+                        <input type="text" name="s" placeholder="Procurar termo..." style="width: 100%; padding: 8px 12px; border: 1px solid var(--border-color); background: #fff; font-family: var(--font-sans); font-size: 0.9rem; outline: none;">
+                        <button type="submit" style="background: var(--accent-color); color: #fff; border: none; padding: 0 14px; font-family: var(--font-mono); cursor: pointer; font-size: 0.85rem;">&rarr;</button>
+                    </form>
+                </div>
+
+                <!-- 2. Menu de Secções Internas da Gastronomia -->
+                <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 20px; margin-bottom: 25px;">
+                    <h3 style="font-family: var(--font-sans); font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-color); margin-top: 0; margin-bottom: 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                        Secções de Gastronomia
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-family: var(--font-sans); font-size: 0.95rem;">
+                        <li style="margin-bottom: 10px;"><a href="oficio.html" style="text-decoration: none; color: var(--text-color); display: block;">01. Ofício <span style="font-size: 0.8rem; color: var(--muted-color); font-family: var(--font-mono); float: right;">Diários</span></a></li>
+                        <li style="margin-bottom: 10px;"><a href="receitas.html" style="text-decoration: none; color: var(--text-color); display: block; font-weight: 600;">02. Receitas <span style="font-size: 0.8rem; color: var(--accent-color); font-family: var(--font-mono); float: right;">Técnica</span></a></li>
+                        <li style="margin-bottom: 10px;"><a href="produtos.html" style="text-decoration: none; color: var(--text-color); display: block;">03. Produtos <span style="font-size: 0.8rem; color: var(--muted-color); font-family: var(--font-mono); float: right;">Terroir</span></a></li>
+                        <li style="margin-bottom: 10px;"><a href="locais.html" style="text-decoration: none; color: var(--text-color); display: block;">04. Locais <span style="font-size: 0.8rem; color: var(--muted-color); font-family: var(--font-mono); float: right;">Território</span></a></li>
+                        <li><a href="sobre.html" style="text-decoration: none; color: var(--text-color); display: block;">05. Sobre <span style="font-size: 0.8rem; color: var(--muted-color); font-family: var(--font-mono); float: right;">Método</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- 3. Caixa de Acesso ao Scriptorium (Humanidades) -->
+                <div style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-top: 3px solid var(--accent-color); padding: 20px;">
+                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-color); text-transform: uppercase; display: block; margin-bottom: 4px;">Blog Académico</span>
+                    <h3 style="font-family: var(--font-sans); font-size: 1rem; font-weight: 600; margin: 0 0 8px 0;">Scriptorium Digital</h3>
+                    <p style="font-size: 0.85rem; color: var(--muted-color); margin: 0 0 12px 0; line-height: 1.5;">
+                        Investigação cultural, teoria crítica e ensaios nas humanidades.
+                    </p>
+                    <a href="https://scriptoriumdigital.org" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-color); text-decoration: none; font-weight: 600;">Entrar no Scriptorium &rarr;</a>
+                </div>
+
             </div>
 
         </div>
@@ -95,7 +145,7 @@
                         Apoiar a Oficina
                     </h4>
                     <p style="font-size: 0.85rem; color: var(--muted-color); margin: 0 0 14px 0; line-height: 1.5; text-align: justify;">
-                        Espaço livre de publicidade e rastreadores, sustentado de forma independente pela comunidade. Contribua se assim o entender.
+                        Este arquivo livre de publicidade e rastreadores subsiste com o apoio independente da comunidade.
                     </p>
                     <div class="w3-center">
                         <a href="https://paypal.me/PauloFurtadoLopes" target="_blank" rel="noopener" class="btn-donativos">
@@ -108,7 +158,7 @@
 
             <!-- Aforismo Central -->
             <p style="font-style: italic; font-family: var(--font-serif); margin-bottom: 1.2rem; color: var(--muted-color); text-align: center;">
-                "Enquanto a mão corta, a mente destila."
+                &ldquo;Enquanto a mão corta, a mente destila.&rdquo;
             </p>
             
             <!-- Menu Transversal do Ecossistema -->
@@ -121,10 +171,10 @@
             
             <!-- Assinatura e Contacto -->
             <p class="font-mono w3-tiny w3-uppercase w3-wide" style="letter-spacing: 0.05em; margin-bottom: 0.5rem; color: var(--muted-color); text-align: center;">
-                • PAULO FURTADO LOPES •
+                &bull; PAULO FURTADO LOPES &bull;
             </p>
             <p class="font-mono w3-tiny" style="color: var(--muted-color); margin: 0; text-align: center;">
-                Contacto Direto: <a href="mailto:mail@paulolopes.org" style="color: inherit; font-weight: 600;">mail@paulolopes.org</a>
+                Contacto: <a href="mailto:mail@paulolopes.org" style="color: inherit; font-weight: 600;">mail@paulolopes.org</a>
             </p>
         </footer>
 
