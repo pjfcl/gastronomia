@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="preload" href="manifest.json" as="fetch" type="application/json" crossorigin>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="preload" href="../manifest.json" as="fetch" type="application/json" crossorigin>
 
-    <title>Produtos & Terroir — Caldo de Sabores | Paulo Lopes</title>
+    <title>Produtos & Matéria-Prima — Gastronomia | Paulo Lopes</title>
 
     <!-- Framework W3.CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Folha de Estilos Oficial (Acedida a partir da pasta /html/) -->
+    <!-- Folha de Estilos Oficial (Partilhada na Raiz) -->
     <link rel="stylesheet" href="../style.css">
 </head>
 <body class="w3-padding-large">
@@ -24,141 +24,78 @@
     <main class="w3-content w3-padding-24" style="max-width: 1100px;">
         
         <!-- Breadcrumb Superior -->
-        <nav class="breadcrumb">
-            <a href="https://paulolopes.org">paulolopes.org</a> / 
-            <a href="https://gastronomia.paulolopes.org">Gastronomia</a> / 
+        <nav class="breadcrumb" style="font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 20px; color: var(--muted-color);">
+            <a href="https://paulolopes.org" style="color: var(--accent-color); text-decoration: none;">paulolopes.org</a> / 
+            <a href="https://gastronomia.paulolopes.org" style="color: var(--accent-color); text-decoration: none;">Gastronomia</a> / 
             <span>Produtos</span>
         </nav>
 
         <!-- Cabeçalho Principal -->
-        <header class="wiki-header">
-            <h1>Produtos</h1>
-            <p class="header-sub">Terroir • Soberania Alimentar & Matéria-Prima</p>
+        <header class="wiki-header" style="border-bottom: 2px solid var(--text-color); padding-bottom: 20px; margin-bottom: 30px;">
+            <h1 style="font-family: var(--font-sans); font-size: 2.5rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">Matéria & Origem</h1>
+            <p class="header-sub" style="font-family: var(--font-sans); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent-color); font-weight: 600; margin: 0;">O Terroir, a Permacultura, a Soberania Alimentar & a Ética do Nose to Tail</p>
         </header>
 
-        <!-- Caixa de Enquadramento / Manifesto da Secção -->
-        <section class="warning-box">
-            <h2>A Origem e a Matéria</h2>
-            <p style="margin: 0;" align="justify">
-                A cozinha consciente exige a pesquisa pela origem da matéria e do produto. A Permacultura é uma ferramenta de soberania alimentar e resistência camponesa que permite a autonomia do artífice. Ao utilizar a Permacultura, a cozinha deixa de ser um mero espaço de transformação técnica para se converter na etapa final de um ciclo de vida da terra.
+        <!-- Caixa de Enquadramento / Nota Conceptual -->
+        <section class="warning-box" style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-left: 4px solid var(--accent-color); padding: 25px 30px; margin-bottom: 40px;">
+            <h2 style="font-family: var(--font-sans); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color); margin-top: 0; margin-bottom: 12px;">A Matéria Como Princípio Ético</h2>
+            <p style="margin: 0; line-height: 1.8; text-align: justify;">
+                O produto culinário não é um mero insumo comercial; é o resultado vivo do solo, do clima, da agricultura regenerativa e da mão que o cultiva ou recolhe. Esta secção reúne a investigação sobre o terroir, os princípios da permacultura aplicada e a urgência do aproveitamento integral (nose-to-tail), honrando a matéria-prima em todas as fases da sua transformação.
             </p>
         </section>
 
-        <!-- Layout em Duas Colunas -->
-        <div class="w3-row-padding" style="margin-left: -16px; margin-right: -16px;">
-            
-            <!-- COLUNA PRINCIPAL: CONTEÚDOS DE PRODUTOS / TERROIR -->
-            <article class="w3-col m8 l9">
-                
-                <h2 class="font-sans" style="font-size: 1.25rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-color); margin-top: 0; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
-                    Matéria, Território e Ciclos
-                </h2>
+        <!-- Secção de Listagem de Entradas (Base de Dados Autónoma / Vinculada à pasta /md/produtos/) -->
+        <div style="margin-bottom: 40px;">
+            <h2 class="font-sans" style="font-size: 1.15rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-color); margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                Inventário de Produtos & Terroir
+            </h2>
 
-                <div class="w3-row-padding" style="margin-left:-16px; margin-right:-16px;">
-                    
-                    <!-- Item 1 -->
-                    <div class="w3-col m6 s12 w3-margin-bottom">
-                        <a href="terroir-e-origem.html" class="card-item">
-                            <span class="card-numeral">01</span>
-                            <h3 class="card-title">O Terroir e o Interlocutor</h3>
-                            <p class="card-desc">Como o solo, o clima e a paisagem determinam o perfil organolético do produto antes de este atravessar a porta da cozinha.</p>
-                            <span class="card-tag">Investigação &rarr;</span>
-                        </a>
-                    </div>
+            <!-- Item de Exemplo 1 -->
+            <div class="card-item" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; margin-bottom: 20px;">
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-color); text-transform: uppercase; display: block; margin-bottom: 6px;">Soberania Alimentar • Ética de Bancada</span>
+                <h3 style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 600; margin: 0 0 10px 0;">
+                    <a href="#" style="text-decoration: none; color: var(--text-color);">O Aproveitamento Integral: A Filosofia do Nose-to-Tail na Cozinha Contemporânea</a>
+                </h3>
+                <p style="font-size: 0.95rem; color: var(--muted-color); margin: 0 0 15px 0; line-height: 1.7; text-align: justify;">
+                    Análise técnica e conceptual sobre a eliminação do desperdício nas carnes e peixes, transformando cortes secundários e subprodutos em elementos centrais de alta cozinha.
+                </p>
+                <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-color); font-weight: 600;">Consultar Artigo &rarr;</span>
+            </div>
 
-                    <!-- Item 2 -->
-                    <div class="w3-col m6 s12 w3-margin-bottom">
-                        <a href="permacultura-e-soberania.html" class="card-item">
-                            <span class="card-numeral">02</span>
-                            <h3 class="card-title">Soberania Camponesa</h3>
-                            <p class="card-desc">A permacultura aplicada como infraestrutura de autonomia e resposta ativa contra a dependência industrial.</p>
-                            <span class="card-tag">Prática &rarr;</span>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="w3-row-padding" style="margin-left:-16px; margin-right:-16px; margin-top: 10px;">
-                    
-                    <!-- Item 3 -->
-                    <div class="w3-col m6 s12 w3-margin-bottom">
-                        <a href="nose-to-tail-etico.html" class="card-item">
-                            <span class="card-numeral">03</span>
-                            <h3 class="card-title">Nose to Tail & Desperdício Zero</h3>
-                            <p class="card-desc">A disciplina da economia circular aplicada a cada fibra, osso e folha. No atanor da cozinha, nada é resíduo — tudo é potência.</p>
-                            <span class="card-tag">Ética do Ofício &rarr;</span>
-                        </a>
-                    </div>
-
-                    <!-- Item 4 -->
-                    <div class="w3-col m6 s12 w3-margin-bottom">
-                        <a href="produtos-da-ilha.html" class="card-item">
-                            <span class="card-numeral">04</span>
-                            <h3 class="card-title">Matérias Insulares</h3>
-                            <p class="card-desc">Registo das especificidades produtivas nas geografias atlânticas e o diálogo com os produtores locais.</p>
-                            <span class="card-tag">Diário de Campo &rarr;</span>
-                        </a>
-                    </div>
-
-                </div>
-
-            </article>
-
-            <!-- COLUNA SECUNDÁRIA (DIREITA): BARRA LATERAL DE NAVEGAÇÃO -->
-            <aside class="w3-col m4 l3">
-                <div class="wiki-sidebar">
-                    
-                    <div class="wiki-sidebar" style="margin-bottom: 25px;">
-                        <h3>Pesquisar no Arquivo</h3>
-                        <form action="../index.html" method="GET" style="margin-top: 10px;">
-                            <input type="text" name="q" placeholder="Procurar termos..." required>
-                        </form>
-                    </div>
-
-                    <h3>Secções</h3>
-                    <ul class="wiki-sidebar-list">
-                        <li><a href="../index.html"><strong>Início</strong> <br><span class="w3-tiny" style="color: var(--muted-color);">Capa do Laboratório</span></a></li>
-                        <li><a href="oficio.html"><strong>Ofício</strong> <br><span class="w3-tiny" style="color: var(--muted-color);">Diários de Campo</span></a></li>
-                        <li><a href="receitas.html"><strong>Receitas</strong> <br><span class="w3-tiny" style="color: var(--muted-color);">Arquivo Técnico</span></a></li>
-                        <li><a href="produtos.html"><strong>Produtos</strong> <br><span class="w3-tiny" style="color: var(--muted-color);">Terroir & Matéria</span></a></li>
-                        <li><a href="locais.html"><strong>Locais</strong> <br><span class="w3-tiny" style="color: var(--muted-color);">Topografias</span></a></li>
-                        <li><a href="sobre.html"><strong>Sobre</strong> <br><span class="w3-tiny" style="color: var(--muted-color);">P.A.R.T.E. & Integral</span></a></li>
-                    </ul>
-
-                </div>
-
-                <!-- Bloco de Chamada para o Scriptorium Digital -->
-                <div class="gastro-callout">
-                    <span class="font-mono w3-tiny w3-uppercase" style="color: var(--accent-color); letter-spacing: 1px;">Humanidades</span>
-                    <p>
-                        "Investigação cultural, teoria crítica e ensaios no Scriptorium Digital."
-                    </p>
-                    <a href="https://scriptoriumdigital.org" class="gastro-link">Scriptorium &rarr;</a>
-                </div>
-            </aside>
+            <!-- Item de Exemplo 2 -->
+            <div class="card-item" style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; margin-bottom: 20px;">
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-color); text-transform: uppercase; display: block; margin-bottom: 6px;">Permacultura • Solo & Cultivo</span>
+                <h3 style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 600; margin: 0 0 10px 0;">
+                    <a href="#" style="text-decoration: none; color: var(--text-color);">Do Composto ao Prato: Ciclos Fechados na Orla Costeira</a>
+                </h3>
+                <p style="font-size: 0.95rem; color: var(--muted-color); margin: 0 0 15px 0; line-height: 1.7; text-align: justify;">
+                    Notas de investigação sobre a integração entre os princípios da agricultura biodinâmica, a fertilidade do solo e a frescura imediata dos aromáticos e hortícolas de base local.
+                </p>
+                <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-color); font-weight: 600;">Consultar Artigo &rarr;</span>
+            </div>
 
         </div>
 
-        <!-- RODAPÉ INSTITUCIONAL COMPLETO -->
-        <footer class="site-footer">
+        <!-- RODAPÉ INSTITUCIONAL TRANSVERSAL -->
+        <footer class="site-footer" style="margin-top: 60px; border-top: 1px solid var(--border-color); padding-top: 30px;">
             
             <div class="footer-boxes-container w3-row w3-text-left" style="margin-bottom: 40px;">
                 
-                <div class="w3-col m8 l8 footer-box-left">
+                <div class="w3-col m8 l8 footer-box-left" style="padding: 24px;">
                     <h4 class="font-sans" style="font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color); margin-top: 0; margin-bottom: 10px;">
-                        Como Navegar Neste Espaço
+                        Sobre Este Espaço
                     </h4>
                     <p style="font-size: 0.9rem; color: var(--text-color); margin: 0; line-height: 1.7; text-align: justify;">
-                        O que aqui encontras é o resultado de uma imersão na culinária e no ofício; na antropologia do quotidiano e no território. Ao criar este arquivo de notas estruturadas, estabeleço um método para organizar a experiência obtida na bancada e no serviço — unindo o rigor técnico das <strong>Receitas</strong> à reflexão auto-etnográfica do <strong>Ofício</strong>, alimentado pela ética dos <strong>Produtos</strong> e das geografias de <strong>Locais</strong>.
+                        Ecossistema digital soberano dedicado à intersecção entre a prática manual, a investigação cultural e a experimentação tecnológica. Organizado fora do fluxo acelerado das redes sociais, este espaço conjuga o food blog auto-etnográfico, o Scriptorium académico e o repositório histórico de autor.
                     </p>
                 </div>
 
-                <div class="w3-col m4 l4 footer-box-right">
+                <div class="w3-col m4 l4 footer-box-right" style="padding: 24px; border-left: 1px solid var(--border-color);">
                     <h4 class="font-sans" style="font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-color); margin-top: 0; margin-bottom: 10px;">
                         Apoiar a Oficina
                     </h4>
                     <p style="font-size: 0.85rem; color: var(--muted-color); margin: 0 0 14px 0; line-height: 1.5; text-align: justify;">
-                        Este arquivo livre de publicidade e rastreadores subsiste com o apoio independente da comunidade. Contribui !
+                        Espaço livre de publicidade e rastreadores, sustentado de forma independente pela comunidade. Contribua se assim o entender.
                     </p>
                     <div class="w3-center">
                         <a href="https://paypal.me/PauloFurtadoLopes" target="_blank" rel="noopener" class="btn-donativos">
@@ -169,20 +106,20 @@
 
             </div>
 
+            <!-- Aforismo Central -->
             <p style="font-style: italic; font-family: var(--font-serif); margin-bottom: 1.2rem; color: var(--muted-color); text-align: center;">
                 "Enquanto a mão corta, a mente destila."
             </p>
             
-            <!-- Menu Geral do Ecossistema -->
-            <div class="footer-links" style="margin-bottom: 15px;">
-                <a href="http://paulolopes.org">Início</a> &mdash; 
-                <a href="https://paulolopes.org/artefactos/">Artefactos</a> &mdash; 
-                <a href="https://costa.paulolopes.org">Casa da Costa</a> &mdash; 
+            <!-- Menu Transversal do Ecossistema -->
+            <div class="footer-links" style="margin-bottom: 15px; text-align: center;">
+                <a href="https://paulolopes.org">Portal</a> &mdash; 
+                <a href="https://scriptoriumdigital.org">Humanidades</a> &mdash; 
                 <a href="https://gastronomia.paulolopes.org">Gastronomia</a> &mdash; 
-                <a href="https://glossario.paulolopes.org">Glossário</a> &mdash; 
-                <a href="https://scriptoriumdigital.org">Scriptorium</a>
+                <a href="https://arquivo.paulolopes.org">Arquivo</a>
             </div>
             
+            <!-- Assinatura e Contacto -->
             <p class="font-mono w3-tiny w3-uppercase w3-wide" style="letter-spacing: 0.05em; margin-bottom: 0.5rem; color: var(--muted-color); text-align: center;">
                 • PAULO FURTADO LOPES •
             </p>
